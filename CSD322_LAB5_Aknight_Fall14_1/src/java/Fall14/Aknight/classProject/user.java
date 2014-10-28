@@ -18,6 +18,7 @@ import javax.inject.Named;
 @SessionScoped
 public class user implements Serializable {
 
+	private String testVariable;
     private String name;
     private String password;
     private String newName;
