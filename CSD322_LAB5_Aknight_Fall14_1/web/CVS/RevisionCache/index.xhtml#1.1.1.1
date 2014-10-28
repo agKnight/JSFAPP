@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <!-- Author: Aaron Knight
+             Date: October 19 2014
+             Purpose: The purpose of this application is to establish
+                        a CRUD interface for a customer database
+        -->
+        <title>#{msgs.title}</title>
+
+    </h:head>
+    <ui:composition template="template/common/commonLayout.xhtml">
+        <ui:define name="header">
+            <h:form >
+                <div align="right">
+                    
+                    <p>New Customer? <h:commandLink styleClass="cLink" value="Register" action="#{user.newRegistration()}"></h:commandLink></p>
+                    <p align="right">
+                        #{msgs.username} 
+                        <h:inputText value="#{user.name}"/> 
+                        #{msgs.password} 
+                        <h:inputSecret value="#{user.password}"/> </p>
+                    <div class="smallButton" >
+                        <h:commandButton value="#{msgs.submit}" action="#{loginController.verifyUser()}"></h:commandButton>
+                    </div>
+                    
+                </div>
+            </h:form>
+        </ui:define>
+        <ui:define name="content">
+            <h:form>
+                <table class="imageTable">
+                    <tr>
+                        <td><h:graphicImage value="/resources/images/tvPicture.jpg" width="150"/></td>
+                        <td><h:graphicImage value="/resources/images/gtr-wiper-blade.jpg" width="150"/></td>
+                        <td><h:graphicImage value="/resources/images/glove.jpg" width="150"/></td>
+                        <td><h:graphicImage value="/resources/images/childrenshoes.png" width="150"/></td>
+                        <td><h:graphicImage value="/resources/images/blanket.jpg" width="150"/></td>
+                    </tr>
+                    <tr>
+                        <td>32" LED TV</td>
+                        <td>Wiper Blades</td>
+                        <td>Baseball Glove</td>
+                        <td>Kids Shoes</td>
+                        <td>Blanket Set</td>
+                    </tr>
+                </table>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+
+
+
+
+
+</html>
+
+

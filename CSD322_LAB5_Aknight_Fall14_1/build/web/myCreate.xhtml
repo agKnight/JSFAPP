@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <!-- Author: Aaron Knight
+             Date: October 19 2014
+             Purpose: The purpose of this application is to establish
+                        a CRUD interface for a customer database
+        -->
+        <title>#{msgs.title}</title>
+    </h:head>
+    <ui:composition template="template/common/commonLayout.xhtml">
+        <ui:define name="content">
+            <h:body>
+                <h:form>
+                    <h:panelGrid columns="2">
+                        <h:outputLabel value="#{msgs.customer_id}" for="customerId" />
+                        <h:inputText id="customerId" value="#{myCustomersController.selected.customerId}" title="#{msgs.customer_id}" required="true" requiredMessage="#{bundle.CreateCustomersRequiredMessage_customerId}"/>
+                        <h:outputLabel value="#{msgs.customer_fname}" for="customerFName" />
+                        <h:inputText id="customerFName" value="#{myCustomersController.selected.customerFName}" title="#{msgs.customer_fname}" />
+                        <h:outputLabel value="#{msgs.customer_lname}" for="customerLName" />
+                        <h:inputText id="customerLName" value="#{myCustomersController.selected.customerLName}" title="#{msgs.customer_lname}" />
+                        <h:outputLabel value="#{msgs.customer_address}" for="customerAddress" />
+                        <h:inputText id="customerAddress" value="#{myCustomersController.selected.customerAddress}" title="#{msgs.customer_address}" />
+                        <h:outputLabel value="#{msgs.customer_city}" for="customerCity" />
+                        <h:inputText id="customerCity" value="#{myCustomersController.selected.customerCity}" title="#{msgs.customer_city}" />
+                        <h:outputLabel value="#{msgs.customer_pc}" for="customerPC" />
+                        <h:inputText id="customerPC" value="#{myCustomersController.selected.customerPC}" title="#{msgs.customer_pc}" />
+                    </h:panelGrid>
+                    <br />
+                    <h:commandButton action="#{myCustomersController.createNew}" value="#{msgs.create}" />
+
+                </h:form>
+            </h:body>
+        </ui:define>
+    </ui:composition>
+</html>
+

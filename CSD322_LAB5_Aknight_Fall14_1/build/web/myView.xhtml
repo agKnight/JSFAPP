@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <!-- Author: Aaron Knight
+             Date: October 19 2014
+             Purpose: The purpose of this application is to establish
+                        a CRUD interface for a customer database
+        -->
+        <title>#{msgs.title}</title>
+    </h:head>
+    <ui:composition template="template/common/commonLayout.xhtml">
+        <ui:define name="content">
+            <h:body>
+                <h:form>
+                    <h:panelGrid columns="2">
+                        <h:outputLabel value="#{msgs.customer_id}" for="customerId" />
+                        <h:outputText  value="#{myCustomersController.selected.customerId}" title="#{msgs.customer_id}"/>
+                        <h:outputLabel value="#{msgs.customer_fname}" for="customerFName" />
+                        <h:outputText  value="#{myCustomersController.selected.customerFName}" title="#{msgs.customer_fname}" />
+                        <h:outputLabel value="#{msgs.customer_lname}" for="customerLName" />
+                        <h:outputText  value="#{myCustomersController.selected.customerLName}" title="#{msgs.customer_lname}" />
+                        <h:outputLabel value="#{msgs.customer_address}" for="customerAddress" />
+                        <h:outputText  value="#{myCustomersController.selected.customerAddress}" title="#{msgs.customer_address}" />
+                        <h:outputLabel value="#{msgs.customer_city}" for="customerCity" />
+                        <h:outputText  value="#{myCustomersController.selected.customerCity}" title="#{msgs.customer_city}" />
+                        <h:outputLabel value="#{msgs.customer_pc}" for="customerPC" />
+                        <h:outputText  value="#{myCustomersController.selected.customerPC}" title="#{msgs.customer_pc}" />
+                    </h:panelGrid>
+                    <h:commandButton action="Back" value="#{msgs.back}"/>
+                </h:form>
+            </h:body>
+        </ui:define>
+    </ui:composition>
+</html>
+

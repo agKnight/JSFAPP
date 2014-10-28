@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+    <application>
+        <locale-config>
+            <default-locale>en</default-locale>
+            
+           <!-- <supported-locale>fr</supported-locale> -->
+           
+       </locale-config>
+        
+        <resource-bundle>
+            <base-name>/resources/messages</base-name>
+            <var>msgs</var>
+        </resource-bundle>
+        
+        <!-- <resource-bundle>
+            <base-name>/resources/messages_fr</base-name>
+            <var>msgs</var>
+        </resource-bundle> -->
+        
+    </application>
+    <managed-bean>
+        <description>gather and work with user login information</description>
+        <managed-bean-name>user</managed-bean-name>
+        <managed-bean-class>Fall14.Aknight.classProject.user</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>loginController</managed-bean-name>
+        <managed-bean-class>Fall14.Aknight.classProject.loginController</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <navigation-rule>
+        <from-view-id>/index.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>success</from-outcome>
+            <to-view-id>/display.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>failure</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>register</from-outcome>
+            <to-view-id>/registration.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/display.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>edit</from-outcome>
+            <to-view-id>/myEdit.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>View</from-outcome>
+            <to-view-id>/myView.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>create</from-outcome>
+            <to-view-id>/myCreate.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>deleted</from-outcome>
+            <to-view-id>/display.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>viewCart</from-outcome>
+            <to-view-id>/cart.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/myEdit.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>View</from-outcome>
+            <to-view-id>/display.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/myView.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>Back</from-outcome>
+            <to-view-id>/display.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/myCreate.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>created</from-outcome>
+            <to-view-id>/display.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+</faces-config>

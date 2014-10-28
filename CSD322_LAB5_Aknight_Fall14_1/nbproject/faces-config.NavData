@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="discount/View.xhtml" x="650" y="900" zoom="true"/>
+        <Node id="productCategory/Edit.xhtml" x="650" y="750" zoom="true"/>
+        <Node id="display.xhtml" x="47" y="111" zoom="true"/>
+        <Node id="template/common/commonContent.xhtml" x="646" y="351" zoom="true"/>
+        <Node id="products/List.xhtml" x="1150" y="300" zoom="true"/>
+        <Node id="orders/List.xhtml" x="1650" y="300" zoom="true"/>
+        <Node id="customers/List.xhtml" x="813" y="242" zoom="true"/>
+        <Node id="myView.xhtml" x="224" y="302" zoom="true"/>
+        <Node id="productCategory/Create.xhtml" x="150" y="600" zoom="true"/>
+        <Node id="discount/Edit.xhtml" x="1150" y="150" zoom="true"/>
+        <Node id="discount/List.xhtml" x="813" y="209" zoom="true"/>
+        <Node id="registration.xhtml" x="900" y="150" zoom="true"/>
+        <Node id="supplierRegion/Create.xhtml" x="400" y="450" zoom="true"/>
+        <Node id="orderInvoice/View.xhtml" x="819" y="271" zoom="true"/>
+        <Node id="template/common/commonFooter.xhtml" x="656" y="405" zoom="true"/>
+        <Node id="template.xhtml" x="400" y="750" zoom="true"/>
+        <Node id="orderInvoice/Edit.xhtml" x="1400" y="300" zoom="true"/>
+        <Node id="orderInvoice/List.xhtml" x="900" y="600" zoom="true"/>
+        <Node id="suppliers/Create.xhtml" x="1400" y="450" zoom="true"/>
+        <Node id="customers/Edit.xhtml" x="150" y="750" zoom="true"/>
+        <Node id="customers/View.xhtml" x="1150" y="600" zoom="true"/>
+        <Node id="suppliers/List.xhtml" x="150" y="900" zoom="true"/>
+        <Node id="supplierRegion/Edit.xhtml" x="150" y="1050" zoom="true"/>
+        <Node id="index.xhtml" x="100" y="20" zoom="true"/>
+        <Node id="suppliers/View.xhtml" x="150" y="450" zoom="true"/>
+        <Node id="orderInvoice/Create.xhtml" x="797" y="64" zoom="true"/>
+        <Node id="suppliers/Edit.xhtml" x="650" y="600" zoom="true"/>
+        <Node id="template/common/commonLayout.xhtml" x="650" y="150" zoom="true"/>
+        <Node id="myEdit.xhtml" x="11" y="308" zoom="true"/>
+        <Node id="productCategory/List.xhtml" x="400" y="600" zoom="true"/>
+        <Node id="orders/Create.xhtml" x="900" y="450" zoom="true"/>
+        <Node id="supplierRegion/List.xhtml" x="1900" y="150" zoom="true"/>
+        <Node id="products/Edit.xhtml" x="650" y="450" zoom="true"/>
+        <Node id="products/View.xhtml" x="800" y="5" zoom="true"/>
+        <Node id="customers/Create.xhtml" x="821" y="301" zoom="true"/>
+        <Node id="productCategory/View.xhtml" x="900" y="750" zoom="true"/>
+        <Node id="supplierRegion/View.xhtml" x="1400" y="150" zoom="true"/>
+        <Node id="products/Create.xhtml" x="795" y="97" zoom="true"/>
+        <Node id="orders/Edit.xhtml" x="1650" y="150" zoom="true"/>
+        <Node id="discount/Create.xhtml" x="799" y="34" zoom="true"/>
+        <Node id="orders/View.xhtml" x="1150" y="450" zoom="true"/>
+        <Node id="template/common/commonHeader.xhtml" x="658" y="378" zoom="true"/>
+        <Node id="myCreate.xhtml" x="330" y="192" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>
